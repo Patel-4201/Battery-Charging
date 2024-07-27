@@ -1,0 +1,62 @@
+ /* box bar */
+ body
+ {
+   background: black;
+   font-family: Arial, Helvetica, sans-serif;
+ }
+ .box
+ {
+   position: relative;
+   margin: 150px auto;
+   width: 150px;
+ }
+ .box .counter:before
+ {
+   content: '';
+   display: block;
+   width: 0;
+   height: 100%;
+   background-color: yellowgreen;
+   box-shadow: 10px 0px 15px 0px yellowgreen;
+   animation: Bat 2s linear infinite ;
+ }
+ .box .counter
+ {
+   width: 100%;
+   height: 10px;
+   border: 4px solid yellowgreen;
+   border-radius: 10px;
+ }
+ .box .battery
+ {
+   position: absolute;
+   font-family: Arial, Helvetica, sans-serif;
+   width: 100%;
+   top: 50px;
+   color: green;
+   font-size: 15px;
+   text-align: center;
+   animation: Bat_1 2s linear infinite;
+ }
+ @keyframes Bat 
+ {
+   0%
+   {
+     width:0%;
+   }
+   100%
+   {
+     width:100%;
+   }
+ }
+ @keyframes Bat_1 
+ {
+   0% , 100%
+   {
+     top:30px;
+   }
+   25%
+   {
+     top:50px;
+   }
+ } 
