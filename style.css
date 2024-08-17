@@ -1,7 +1,9 @@
  /* box bar */
  body
  {
-   background: black;
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to top, #e14fad 0%, #f9d423 100%);
    font-family: Arial, Helvetica, sans-serif;
  }
  .box
@@ -9,6 +11,7 @@
    position: relative;
    margin: 150px auto;
    width: 150px;
+   margin: 30px auto 0;
  }
  .box .counter:before
  {
@@ -16,16 +19,17 @@
    display: block;
    width: 0;
    height: 100%;
-   background-color: yellowgreen;
+   background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
    box-shadow: 10px 0px 15px 0px yellowgreen;
    animation: Bat 2s linear infinite ;
  }
  .box .counter
  {
-   width: 100%;
-   height: 10px;
-   border: 4px solid yellowgreen;
+   width: 250px;
+   height: 150px;
+   border: 4px solid black;
    border-radius: 10px;
+   margin: 100px auto auto;
  }
  .box .battery
  {
@@ -33,8 +37,8 @@
    font-family: Arial, Helvetica, sans-serif;
    width: 100%;
    top: 50px;
-   color: green;
-   font-size: 15px;
+   color: black;
+   font-size: 25px;
    text-align: center;
    animation: Bat_1 2s linear infinite;
  }
